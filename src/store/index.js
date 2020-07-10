@@ -14,5 +14,5 @@ export default new Vuex.Store({
   },
   getters: {
     count: state => {return state.count}
-  }
+  },
 })
