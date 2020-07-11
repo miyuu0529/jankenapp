@@ -20,6 +20,7 @@ Vue.use(VueRouter)
     name: 'Game',
     component: () => import(/* webpackChunkName: "about" */ '../views/Game.vue')
   }
+ 
 ]
 
 const router = new VueRouter({

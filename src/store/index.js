@@ -5,15 +5,20 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+   score:''
   },
-  
   mutations: {
+   onSelected(state,payload){
+     state.score += payload + " "
+   }
   },
-  actions: {
+  actions: { //非同期//
   },
   modules: {
   },
   getters: {
-    count: state => {return state.count}
-  },
+    score: state => {
+      return state.score
+    }
+  }
 })
